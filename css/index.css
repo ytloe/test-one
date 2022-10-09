@@ -118,6 +118,14 @@ img {
   position: relative;
 }
 
+p {
+  position: absolute;
+  top: -8px;
+  right: 13px;
+  color: lightgray;
+  font-size: 7px;
+}
+
 dl {
   width: 230px;
   margin: 15px;
@@ -176,12 +184,4 @@ h4 {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #888888;
-}
-
-p {
-  position: absolute;
-  top: -15px;
-  right: 14px;
-  color: lightgray;
-  font-size: 7px;
 }
