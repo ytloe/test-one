@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  scrollbar-width: thin;
 }
 
 /*顶栏*/
@@ -27,13 +28,13 @@
 
 .彩蛋:hover {
   color: blue;
-  ;
 }
 
 /* logo */
 img {
   height: 100%;
   margin-right: 20px;
+  z-index: 0;
 }
 
 /*搜索框*/
@@ -42,7 +43,8 @@ img {
   height: 40px;
   border-radius: 40px;
   padding: 5px;
-  align-items: center
+  align-items: center;
+  z-index: 0;
 }
 
 .search-box:hover>.search-txt {
@@ -123,7 +125,7 @@ p {
   top: -8px;
   right: 13px;
   color: lightgray;
-  font-size: 7px;
+  font-size: 0.7em;
 }
 
 dl {
