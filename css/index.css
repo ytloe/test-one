@@ -4,6 +4,11 @@
   scrollbar-width: thin;
 }
 
+body {
+  user-select: none;
+  overflow: hidden;
+}
+
 /*顶栏*/
 .top {
   width: 100%;
@@ -110,6 +115,69 @@ img {
   content: "\e620";
 }
 
+/* 打开侧栏按钮 */
+.nextsidebar {
+  width: 25px;
+  height: 22px;
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+  transition: all .4s;
+}
+
+.nextsidebar .i {
+  width: 100%;
+  height: 4px;
+  background-color: lightgrey;
+  border-radius: 2px;
+  position: absolute;
+}
+
+.nextsidebar .i:nth-child(1) {
+  top: 0;
+}
+
+.nextsidebar .i:nth-child(2) {
+  top: 9px;
+}
+
+.nextsidebar .i:nth-child(3) {
+  bottom: 0;
+}
+
+.nextsidebar.show {
+  transform: translateY(-50%) translateX(-230px);
+  position: fixed;
+}
+
+/* 侧栏 */
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  transform: translateX(300px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 5px 5px 20px lightgray;
+  border-radius: 15px 0 0 15px;
+  box-sizing: border-box;
+  transition: all .4s;
+}
+
+.sidebar-top {
+  width: 100%;
+  height: 60px;
+  background-color: skyblue;
+  border-radius: 15px 0 0 0;
+}
+
+.sidebar.show {
+  transform: translateX(0px);
+}
+
 /*整体*/
 .whole {
   height: 100%;
@@ -157,6 +225,14 @@ h4 {
   text-align: center;
   font-size: 1.5em;
   margin-bottom: 10px;
+  cursor: default;
+}
+
+.cs {
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 /*美化滚动条*/
