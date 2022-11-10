@@ -251,23 +251,23 @@
       <div class="i"></div>
     </div>
   </div>
+  <!-- js -->
+  <script>
+    let nextsidebar = document.querySelector('.nextsidebar')
+    let sidebar = document.querySelector('.sidebar')
+    let classicEl = document.querySelector('.classic')
+    nextsidebar.onclick = function () {
+      sidebar.classList.toggle('show')
+      nextsidebar.classList.toggle('show')
+    }
+
+    classicEl.onclick = function () {
+      sidebar.classList.remove('show')
+      nextsidebar.classList.remove('show')
+    }
+
+  </script>
+
 </body>
-
-<!-- js -->
-<script>
-  let nextsidebar = document.querySelector('.nextsidebar')
-  let sidebar = document.querySelector('.sidebar')
-  let classicEl = document.querySelector('.classic')
-  nextsidebar.onclick = function () {
-    sidebar.classList.toggle('show')
-    nextsidebar.classList.toggle('show')
-  }
-
-  classicEl.onclick = function () {
-    sidebar.classList.remove('show')
-    nextsidebar.classList.remove('show')
-  }
-
-</script>
 
 </html>
