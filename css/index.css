@@ -8,6 +8,15 @@ body {
   user-select: none;
 }
 
+.bgimg {
+  width: 100vw;
+  opacity: 50%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
 
 /*顶栏*/
 .top {
@@ -156,10 +165,9 @@ img {
 .sidebar {
   width: 300px;
   height: 100vh;
-  transform: translateX(300px);
   position: fixed;
   top: 0;
-  right: 0;
+  right: -300px;
   background-color: white;
   box-shadow: 5px 5px 20px lightgray;
   border-radius: 15px 0 0 15px;
@@ -175,7 +183,7 @@ img {
 }
 
 .sidebar.show {
-  transform: translateX(0px);
+  transform: translateX(-300px);
 }
 
 /*整体*/
@@ -197,6 +205,7 @@ p {
 }
 
 dl {
+  background-color: rgb(255, 255, 255, 0.8);
   width: 230px;
   margin: 15px;
   padding: 15px;
@@ -213,11 +222,11 @@ dt:hover {
   background-color: wheat;
   border-radius: 10px;
   box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.15);
-  transform: scale(110%);
+  transform: scale(105%);
 }
 
 dt:active {
-  transform: translateY(4px) scale(110%);
+  transform: translateY(4px) scale(103%);
   box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
